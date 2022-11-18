@@ -1,0 +1,23 @@
+{
+  "name": "javascript_restaurant_page",
+  "version": "1.0.0",
+  "description": "Restaurant Page for Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MWest352/Restaurant_page.git"
+  },
+  "author": "Matthew Sedlack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MWest352/Restaurant_page/issues"
+  },
+  "homepage": "https://github.com/MWest352/Restaurant_page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
+}
