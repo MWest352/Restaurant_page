@@ -1,3 +1,9 @@
+import './style.css';
+
+
+
+
+
 console.log("ducky")
 
 function content() {
@@ -5,6 +11,7 @@ function content() {
 
   // Lodash, currently included via a script, is required for this line to work
   element.innerHTML = "Hello World"
+  element.classList.add('hello')
 
   return element;
 }
