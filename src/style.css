@@ -1,3 +1,106 @@
-.hello{
-  color: red;
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: lemonchiffon;
 }
+
+/* MAIN CONTAINER*/
+#mainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid black;
+  background-color: lightblue;
+  padding: 1px;
+}
+
+/* HEADER */
+#header{
+  border: 2px solid black;
+  width: 100%;
+  padding: 1px;
+}
+
+#title{
+  background-color: lightcoral;
+  border: 2px solid black;
+  text-align: center;
+  padding: 1px;
+  margin: 1px;
+}
+
+#subtitle{
+  background-color:lightcyan;
+  border: 2px black solid;
+  text-align: center;
+  padding: 1px;
+  margin: 1px;
+}
+
+/* NAVIGATION BAR */
+#navBar{
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  margin: 1px;
+  background-color: lightgrey;
+  border: 3px solid black;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* ABOUT SECTION */
+#aboutSection{
+  border: 3px solid black;
+  width: 100%; 
+  padding: 1px;
+}
+
+#aboutHeader{
+  background-color:lightgreen;
+  border: 2px solid black;
+  padding: 1px;
+  margin: 1px;
+  text-align: center;
+}
+
+/* FOOD MENU */
+#foodMenuMain{
+  display:flex;
+  flex-direction: column;
+  border: 3px solid black;
+  width: 100%;
+  margin: 1px;
+}
+
+#foodMenuHeader{
+  background-color:lightgreen;
+  border: 2px solid black;
+  padding: 1px;
+  margin: 1px;
+  text-align: center;
+}
+
+#drinksHeader{
+  background-color:lightgreen;
+  border: 2px solid black;
+  padding: 1px;
+  margin: 1px;
+  text-align: center;
+}
+
+.foodMenuItem, .drinkItem{
+  text-align: center;
+  margin: 25px;
+  border: 2px solid black;
+  background-color: lightgoldenrodyellow;
+}
+
+.contactInfoMain{
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  background-color: lightgoldenrodyellow;  
+}
+
+
+
