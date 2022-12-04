@@ -1,15 +1,5 @@
 import './style.css';
 
-function content() {
-  const mainElement = document.createElement('div');
-
-  mainElement.innerHTML = "Content Container"
-  mainElement.setAttribute('id', 'content')
-
-  return mainElement;
-}
-
-document.body.appendChild(content());
 
 function mainContainer() {
   const mainContainer = document.createElement('div');
@@ -20,15 +10,6 @@ function mainContainer() {
   return mainContainer;
 }
 
-document.body.appendChild(mainContainer());
+document.getElementById('content').appendChild(mainContainer());
 
-function content() {
-  const mainElement = document.createElement('div');
 
-  mainElement.innerHTML = "Hello World"
-  mainElement.setAttribute('id', 'content')
-
-  return mainElement;
-}
-
-document.body.appendChild(content());
