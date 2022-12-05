@@ -5,7 +5,6 @@
 function header() {
   const header = document.createElement('div');
 
-  header.innerHTML = "header";
   header.setAttribute('id', 'header');
 
   return header;

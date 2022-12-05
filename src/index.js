@@ -11,7 +11,6 @@ import { navItemMenu } from './navBarModule';
 function mainContainer() {
   const mainContainer = document.createElement('div');
 
-  mainContainer.innerHTML = "mainContainer"
   mainContainer.setAttribute('id', 'mainContainer')
 
   return mainContainer;
@@ -22,7 +21,7 @@ document.getElementById('content').append(mainContainer());
 //APPEND HEADER SECTION
 document.getElementById('mainContainer').append(header());
 document.getElementById('header').append(title());
-document.getElementById('title').append(subtitle());
+document.getElementById('header').append(subtitle());
 
 //APPEND NAVIGATION SECTION
 document.getElementById('mainContainer').append(navBar());

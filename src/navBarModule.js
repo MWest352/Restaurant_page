@@ -3,7 +3,6 @@
 function navBar() {
   const navBar = document.createElement('div');
 
-  navBar.innerHTML = "navBar";
   navBar.setAttribute('id', 'navBar');
 
   return navBar;
