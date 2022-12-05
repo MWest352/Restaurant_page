@@ -103,7 +103,7 @@ html, body {
   background-color: lightgoldenrodyellow;
 }
 
-.contactInfoMain{
+#contactInfoMain{
   width: 100%;
   text-align: center;
   border: 2px solid black;

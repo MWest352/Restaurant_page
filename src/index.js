@@ -29,6 +29,11 @@ import { cokeProducts } from './menuModule';
 import { milkshakesHeader } from './menuModule'
 import { milkshakeFlavors } from './menuModule';
 
+//IMPORT CONTACT INFO
+import { contactInfoMain } from './contactInfoModule';
+import { contactHeader } from './contactInfoModule';
+import { address } from './contactInfoModule';
+import { phone } from './contactInfoModule';
 
 
 //MAIN CONTAINER
@@ -75,3 +80,9 @@ document.getElementById('foodMenuMain').append(drinksHeader());
 document.getElementById('foodMenuMain').append(cokeProducts());
 document.getElementById('foodMenuMain').append(milkshakesHeader());
 document.getElementById('milkshakesHeader').append(milkshakeFlavors());
+
+//APPEND CONTACT INFO
+document.getElementById('mainContainer').append(contactInfoMain());
+document.getElementById('contactInfoMain').append(contactHeader())
+document.getElementById('contactInfoMain').append(address());
+document.getElementById('contactInfoMain').append(phone());
