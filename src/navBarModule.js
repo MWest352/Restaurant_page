@@ -1,10 +1,49 @@
 //This is where Navigation items will  go
 
-function header(title) {
-  const header = document.createElement('div');
+function navBar() {
+  const navBar = document.createElement('div');
 
-  header.innerHTML = "header";
-  header.setAttribute('id', 'header');
+  navBar.innerHTML = "navBar";
+  navBar.setAttribute('id', 'navBar');
 
-  return header;
+  return navBar;
 }
+
+function navItemMenu() {
+  const navItemMenu = document.createElement('div');
+
+  navItemMenu.innerHTML = "Menu";
+  navItemMenu.classList.add('navItem');
+  navItemMenu.setAttribute('id', 'navItemMenu');
+
+  return navItemMenu;
+}
+
+function navItemAbout() {
+  const navItemAbout = document.createElement('div');
+
+  navItemAbout.innerHTML = "About";
+  navItemAbout.classList.add('navItem');
+  navItemAbout.setAttribute('id', 'navItemAbout');
+
+  return navItemAbout;
+}
+
+function navItemContact() {
+  const navItemContact = document.createElement('div');
+
+  navItemContact.innerHTML = "Contact";
+  navItemContact.classList.add('navItem');
+  navItemContact.setAttribute('id', 'navItemContact');
+
+  return navItemContact;
+}
+
+
+export{
+  navBar,
+  navItemMenu,
+  navItemAbout,
+  navItemContact
+
+  }
