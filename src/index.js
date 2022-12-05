@@ -13,6 +13,23 @@ import { aboutSection } from './aboutModule';
 import { aboutHeader } from './aboutModule';
 import { aboutBody } from './aboutModule';
 
+//IMPORT MENU
+import { foodMenuMain } from './menuModule';
+import { foodMenuHeader } from './menuModule';
+import { slider } from './menuModule';
+import { sliderDescription} from './menuModule';
+import { sliderWit } from './menuModule';
+import {sliderWitDescription} from './menuModule';
+import { fries } from './menuModule';
+import { friesDescription } from './menuModule'
+import { friesWit } from './menuModule';
+import { friesWitDescription } from './menuModule';
+import { drinksHeader } from './menuModule';
+import { cokeProducts } from './menuModule';
+import { milkshakesHeader } from './menuModule'
+import { milkshakeFlavors } from './menuModule';
+
+
 
 //MAIN CONTAINER
 function mainContainer() {
@@ -41,3 +58,20 @@ document.getElementById('navBar').append(navItemAbout());
 document.getElementById('mainContainer').append(aboutSection());
 document.getElementById('aboutSection').append(aboutHeader());
 document.getElementById('aboutSection').append(aboutBody());
+
+
+//APPEND MENU
+document.getElementById('mainContainer').append(foodMenuMain());
+document.getElementById('foodMenuMain').append(foodMenuHeader());
+document.getElementById('foodMenuMain').append(slider());
+document.getElementById('slider').append(sliderDescription());
+document.getElementById('foodMenuMain').append(sliderWit());
+document.getElementById('sliderWit').append(sliderWitDescription());
+document.getElementById('foodMenuMain').append(fries());
+document.getElementById('fries').append(friesDescription());
+document.getElementById('foodMenuMain').append(friesWit());
+document.getElementById('friesWit').append(friesWitDescription());
+document.getElementById('foodMenuMain').append(drinksHeader());
+document.getElementById('foodMenuMain').append(cokeProducts());
+document.getElementById('foodMenuMain').append(milkshakesHeader());
+document.getElementById('milkshakesHeader').append(milkshakeFlavors());

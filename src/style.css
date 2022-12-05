@@ -96,7 +96,7 @@ html, body {
   text-align: center;
 }
 
-.foodMenuItem, .drinkItem{
+.foodMenuItem{
   text-align: center;
   margin: 25px;
   border: 2px solid black;
