@@ -1,4 +1,7 @@
 import './style.css';
+import { header } from './headerModule';
+import { title } from './headerModule';
+import {subtitle} from './headerModule';
 
 
 function mainContainer() {
@@ -10,6 +13,9 @@ function mainContainer() {
   return mainContainer;
 }
 
-document.getElementById('content').appendChild(mainContainer());
+document.getElementById('content').append(mainContainer());
 
 
+document.getElementById('mainContainer').append(header());
+document.getElementById('header').append(title())
+document.getElementById('title').append(subtitle())
