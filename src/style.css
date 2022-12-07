@@ -16,6 +16,7 @@ html, body {
 /* HEADER */
 #header{
   border: 3px solid black;
+  background-color: blueviolet;
   width: 100%;
   padding: 1px;
   margin: 1px;
@@ -59,16 +60,20 @@ html, body {
 }
 
 #displayContainer{
+  display: flex;
   border: 3px solid black;
-  margin: 1px;
-  padding: 1px;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  background-color: burlywood;
 }
 
 /* ABOUT SECTION */
 #aboutSection{
   border: 2px solid black;
   width: 100%; 
-  padding: 1px;
+  padding: 5px;
+  margin: 5px;
 }
 
 #aboutHeader{
@@ -112,10 +117,12 @@ html, body {
 }
 
 #contactInfoMain{
-  width: 100%;
-  text-align: center;
   border: 2px solid black;
-  background-color: lightgoldenrodyellow;  
+  background-color: lightgoldenrodyellow;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
 }
 
 
