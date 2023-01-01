@@ -1,3 +1,4 @@
+//Import Styling
 import './styling/style.css';
 //IMPORT HEADER
 import { header } from './headerModule';
