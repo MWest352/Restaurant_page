@@ -1,4 +1,4 @@
-import './style.css';
+import './styling/style.css';
 //IMPORT HEADER
 import { header } from './headerModule';
 import { title } from './headerModule';
