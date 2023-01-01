@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: lemonchiffon;
+  background-image: url('./images/checker.png');
   box-shadow: 
   0 0 0.1vw 0.4vw #fff7f7,
   0 0 0.4vw 0.6vw #e97272,

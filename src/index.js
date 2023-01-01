@@ -1,5 +1,6 @@
 //Import Styling
 import './styling/style.css';
+import './styling/images/checker.png';
 //IMPORT HEADER
 import { header } from './headerModule';
 import { title } from './headerModule';
