@@ -48,15 +48,23 @@ body {
 }
 
 #title{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: lightcoral;
   border: 2px solid black;
-  font-size: 25pt;
+  font-size: 75pt;
   text-align: center;
   padding: 1px;
   margin: 1px;
 }
 
 #subtitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color:lightcyan;
   border: 2px black solid;
   text-align: center;
