@@ -3,6 +3,7 @@ import './styling/style.css';
 import './styling/images/checker.png';
 //IMPORT HEADER
 import { header } from './headerModule';
+import {headerBackground} from './headerModule'
 import { title } from './headerModule';
 import {subtitle} from './headerModule';
 //IMPORT NAVBAR
@@ -60,6 +61,7 @@ document.getElementById('content').append(mainContainer());
 
 //APPEND HEADER SECTION
 document.getElementById('mainContainer').append(header());
+document.getElementById('header').append(headerBackground());
 document.getElementById('header').append(title());
 document.getElementById('header').append(subtitle());
 

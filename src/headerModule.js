@@ -1,5 +1,5 @@
 //This contains the Title, and subtitle sections
-
+import Pink_Sled from './styling/images/Pink_Sled_BW2.jpg'
 
 //HEADER
 function header() {
@@ -9,6 +9,17 @@ function header() {
 
   return header;
 }
+
+//HEADER BACKGROUND
+function headerBackground(){
+  const headerBackground = new Image();
+  headerBackground.src = Pink_Sled
+
+  headerBackground.setAttribute('id', 'backgroundImage')
+
+  return headerBackground;
+}
+
 
 //TITLE
 function title() {
@@ -34,6 +45,7 @@ function subtitle() {
 
 export{
   header,
+  headerBackground,
   title,
   subtitle
 }
