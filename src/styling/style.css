@@ -3,6 +3,21 @@
   padding: 0
 }
 
+@font-face{
+  font-family: Agatta;
+  src: url('./fonts/Agatta.ttf')
+}
+
+@font-face{
+  font-family: Bellamy-Signature;
+  src:url('./fonts/Bellamy\ Signature.ttf')
+}
+
+@font-face{
+  font-family: NeonNight;
+  src:url('./fonts/She-Stole-the-Night.ttf')
+}
+
 body {  
   height: 100%;
   width: 100%;
