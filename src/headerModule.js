@@ -13,7 +13,7 @@ function header() {
 function title() {
   const title = document.createElement('div');
 
-  title.innerHTML = "Daddio's";
+  title.innerHTML = "B. Goode's";
   title.setAttribute('id', 'title');
 
   return title;
