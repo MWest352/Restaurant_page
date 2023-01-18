@@ -1,7 +1,14 @@
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
+
+
+@font-face{
+  font-family: NeonNight;
+  src:url('./fonts/She-Stole-the-Night.ttf')
+}
+
 
 @font-face{
   font-family: Agatta;
@@ -13,10 +20,6 @@
   src:url('./fonts/Bellamy\ Signature.ttf')
 }
 
-@font-face{
-  font-family: NeonNight;
-  src:url('./fonts/She-Stole-the-Night.ttf')
-}
 
 body {  
   height: 100%;
@@ -24,6 +27,7 @@ body {
   background-color: lemonchiffon;
   background-image: url('./images/checker.png');
 }
+
 
 /* MAIN CONTAINER*/
 #mainContainer{
@@ -49,40 +53,50 @@ body {
   flex-direction: column;
   justify-content: center;
   border: 3px solid black;
+  background: url('./images/Pink_Sled_BW2.jpg') no-repeat center center/cover;
   background-color: rgba(20, 20, 20, .15);
   width: 100%;
   padding: 1px;
   margin: 1px;
 }
 
-#backgroundImage{
-  border: 3px solid blue;
-  position: relative;
-  max-width: 100%;
-  margin: 1px;
-}
 
 #title{
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: lightcoral;
-  border: 2px solid black;
-  font-size: 75pt;
+  font-family: Agatta;
+  font-size: 11.5vw;
   text-align: center;
+  background-color: red;
+  color:#E1FFFF;
+  text-shadow: 
+  .1vw 0vw .25vw #F8FFFE, .2vw 0vw .25vw #F8FFFE, .4vw 0vw .25vw #F8FFFE, 
+
+  .1vw 0vw   0vw #BFFFFF, .2vw 0vw   0vw #BFFFFF, .4vw 0vw   0vw #BFFFFF,
+  .1vw 0vw  .1vw #BFFFFF, .2vw 0vw  .1vw #BFFFFF, .4vw 0vw  .1vw #BFFFFF,
+  .1vw 0vw   2vw #BFFFFF, .2vw 0vw   2vw #BFFFFF, .4vw 0vw   2vw #BFFFFF, 
+
+  .1vw 0vw   1vw #0300F8, .2vw 0vw   1vw#0300F8, .4vw 0vw   5vw#0300F8, 
+  .1vw 0vw   5vw#0300F8, .2vw 0vw  20vw#0300F8, .4vw 0vw  10vw#0300F8,
+  .1vw 0vw  10vw#0300F8, .2vw 0vw  30vw#0300F8, .4vw 0vw  10vw#0300F8;
   padding: 1px;
   margin: 1px;
 }
 
 #subtitle{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color:lightcyan;
-  border: 2px black solid;
+  font-family: Bellamy-Signature ;
+  font-size: 20vw;
+  background-color: green;
   text-align: center;
+  color:#E1FFFF;
+  text-shadow: 
+  .1vw 0vw .25vw #F8FFFE, .2vw 0vw .25vw #F8FFFE, .4vw 0vw .25vw #F8FFFE, 
+
+  .1vw 0vw   0vw #BFFFFF, .2vw 0vw   0vw #BFFFFF, .4vw 0vw   0vw #BFFFFF,
+  .1vw 0vw  .1vw #BFFFFF, .2vw 0vw  .1vw #BFFFFF, .4vw 0vw  .1vw #BFFFFF,
+  .1vw 0vw   2vw #BFFFFF, .2vw 0vw   2vw #BFFFFF, .4vw 0vw   2vw #BFFFFF, 
+
+  .1vw 0vw   1vw #0300F8, .2vw 0vw   1vw#0300F8, .4vw 0vw   5vw#0300F8, 
+  .1vw 0vw   5vw#0300F8, .2vw 0vw  20vw#0300F8, .4vw 0vw  10vw#0300F8,
+  .1vw 0vw  10vw#0300F8, .2vw 0vw  30vw#0300F8, .4vw 0vw  10vw#0300F8;
   padding: 1px;
   margin: 1px;
 }
