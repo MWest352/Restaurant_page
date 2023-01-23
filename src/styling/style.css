@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: center;
   border: 3px solid black;
-  background: url('./images/Pink_Sled_BW2.jpg') no-repeat center center/cover;
+  background: url('./images/BWSled.jpg') no-repeat center center/cover;
   background-color: rgba(20, 20, 20, .15);
   width: 100%;
   padding: 1px;
@@ -65,7 +65,7 @@ body {
   font-family: Agatta;
   font-size: 11.5vw;
   text-align: center;
-  background-color: red;
+  /* background-color: red; */
   color:#E1FFFF;
   text-shadow: 
   .1vw 0vw .25vw #F8FFFE, .2vw 0vw .25vw #F8FFFE, .4vw 0vw .25vw #F8FFFE, 
@@ -84,7 +84,7 @@ body {
 #subtitle{
   font-family: Bellamy-Signature ;
   font-size: 20vw;
-  background-color: green;
+  /* background-color: green; */
   text-align: center;
   color:#E1FFFF;
   text-shadow: 
