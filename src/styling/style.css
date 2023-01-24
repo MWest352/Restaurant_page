@@ -3,12 +3,10 @@
   padding: 0;
 }
 
-
-@font-face{
-  font-family: NeonNight;
-  src:url('./fonts/She-Stole-the-Night.ttf')
+@font-face {
+  font-family: Limelight;
+  src: url('./fonts/Limelight-Regular.ttf');
 }
-
 
 @font-face{
   font-family: Agatta;
@@ -24,10 +22,25 @@
 body {  
   height: 100%;
   width: 100%;
-  background-color: lemonchiffon;
   background-image: url('./images/checker.png');
 }
 
+
+#title, #subtitle, .navItem{
+  text-shadow: 
+  .1vw 0vw .25vw #F8FFFE, .2vw 0vw .25vw #F8FFFE, .4vw 0vw .25vw #F8FFFE, 
+
+  .1vw 0vw   0vw #BFFFFF, .2vw 0vw   0vw #BFFFFF, .4vw 0vw   0vw #BFFFFF,
+  .1vw 0vw  .1vw #BFFFFF, .2vw 0vw  .1vw #BFFFFF, .4vw 0vw  .1vw #BFFFFF,
+  .1vw 0vw   2vw #BFFFFF, .2vw 0vw   2vw #BFFFFF, .4vw 0vw   2vw #BFFFFF, 
+
+  .1vw 0vw   1vw #0300F8, .2vw 0vw   1vw#0300F8, .4vw 0vw   5vw#0300F8, 
+  .1vw 0vw   5vw#0300F8, .2vw 0vw  20vw#0300F8, .4vw 0vw  10vw#0300F8,
+  .1vw 0vw  10vw#0300F8, .2vw 0vw  30vw#0300F8, .4vw 0vw  10vw#0300F8;
+}
+.navItem, #aboutHeader, #foodMenuHeader, #drinksHeader{
+  font-family: Limelight;
+} 
 
 /* MAIN CONTAINER*/
 #mainContainer{
@@ -56,8 +69,12 @@ body {
   background: url('./images/BWSled.jpg') no-repeat center center/cover;
   background-color: rgba(20, 20, 20, .15);
   width: 100%;
-  padding: 1px;
-  margin: 1px;
+  /* padding: 1px;
+  margin: 1px; */
+  /* margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px; */
+
 }
 
 
@@ -67,36 +84,15 @@ body {
   text-align: center;
   /* background-color: red; */
   color:#E1FFFF;
-  text-shadow: 
-  .1vw 0vw .25vw #F8FFFE, .2vw 0vw .25vw #F8FFFE, .4vw 0vw .25vw #F8FFFE, 
-
-  .1vw 0vw   0vw #BFFFFF, .2vw 0vw   0vw #BFFFFF, .4vw 0vw   0vw #BFFFFF,
-  .1vw 0vw  .1vw #BFFFFF, .2vw 0vw  .1vw #BFFFFF, .4vw 0vw  .1vw #BFFFFF,
-  .1vw 0vw   2vw #BFFFFF, .2vw 0vw   2vw #BFFFFF, .4vw 0vw   2vw #BFFFFF, 
-
-  .1vw 0vw   1vw #0300F8, .2vw 0vw   1vw#0300F8, .4vw 0vw   5vw#0300F8, 
-  .1vw 0vw   5vw#0300F8, .2vw 0vw  20vw#0300F8, .4vw 0vw  10vw#0300F8,
-  .1vw 0vw  10vw#0300F8, .2vw 0vw  30vw#0300F8, .4vw 0vw  10vw#0300F8;
-  padding: 1px;
-  margin: 1px;
+  
 }
 
 #subtitle{
   font-family: Bellamy-Signature ;
-  font-size: 20vw;
+  font-size: 15vw;
   /* background-color: green; */
   text-align: center;
   color:#E1FFFF;
-  text-shadow: 
-  .1vw 0vw .25vw #F8FFFE, .2vw 0vw .25vw #F8FFFE, .4vw 0vw .25vw #F8FFFE, 
-
-  .1vw 0vw   0vw #BFFFFF, .2vw 0vw   0vw #BFFFFF, .4vw 0vw   0vw #BFFFFF,
-  .1vw 0vw  .1vw #BFFFFF, .2vw 0vw  .1vw #BFFFFF, .4vw 0vw  .1vw #BFFFFF,
-  .1vw 0vw   2vw #BFFFFF, .2vw 0vw   2vw #BFFFFF, .4vw 0vw   2vw #BFFFFF, 
-
-  .1vw 0vw   1vw #0300F8, .2vw 0vw   1vw#0300F8, .4vw 0vw   5vw#0300F8, 
-  .1vw 0vw   5vw#0300F8, .2vw 0vw  20vw#0300F8, .4vw 0vw  10vw#0300F8,
-  .1vw 0vw  10vw#0300F8, .2vw 0vw  30vw#0300F8, .4vw 0vw  10vw#0300F8;
   padding: 1px;
   margin: 1px;
 }
@@ -105,10 +101,10 @@ body {
 #navBar{
   display: flex;
   width: 100%;
-  padding: 5px;
-  margin: 1px;
-  background-color: lightgrey;
-  border: 3px solid black;
+  /* padding: 5px;
+  margin: 1px; */
+  background-color: black;
+  /* border: 3px solid black; */
   justify-content: center;
   
   
@@ -119,31 +115,39 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   cursor: pointer;
+  font-family: Limelight;
+  text-decoration: underline overline;
+  font-size: 5vw;
+  color:#E1FFFF;
 }
+
+
 
 #displayContainer{
   display: flex;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   width: 100%;
-  margin: 5px;
+  /* margin: 5px; */
   padding: 5px;
-  background-color: burlywood;
+  /* background-color: burlywood; */
+  background-color: black;
 }
 
 /* ABOUT SECTION */
 #aboutSection{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%; 
-  padding: 5px;
-  margin: 5px;
+  padding: 20px;
+  color: whitesmoke;
 }
 
 #aboutHeader{
-  background-color:lightgreen;
-  border: 2px solid black;
+  background-color:black;
+  color: white;
   padding: 1px;
   margin: 1px;
   text-align: center;
+  font-size: 25px;
 }
 
 /* FOOD MENU */
@@ -156,31 +160,37 @@ body {
 }
 
 #foodMenuHeader{
-  background-color:lightgreen;
+  background-color: black;
   border: 2px solid black;
   padding: 1px;
   margin: 1px;
   text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 25px;
 }
 
 #drinksHeader{
-  background-color:lightgreen;
+  background-color: black;
   border: 2px solid black;
   padding: 1px;
   margin: 1px;
   text-align: center;
+  color: white;
 }
 
 .foodMenuItem{
   text-align: center;
   margin: 25px;
   border: 2px solid black;
-  background-color: lightgoldenrodyellow;
+  background-color: black;
+  color: whitesmoke;
 }
 
 #contactInfoMain{
   border: 2px solid black;
-  background-color: lightgoldenrodyellow;
+  background-color: black;
+  color: white;
   width: 100%;
   margin: 5px;
   padding: 5px;
