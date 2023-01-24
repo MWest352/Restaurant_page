@@ -25,7 +25,7 @@ body {
   background-image: url('./images/checker.png');
 }
 
-
+/* TEXT SHADOW FOR NEON EFFECT */
 #title, #subtitle, .navItem{
   text-shadow: 
   .1vw 0vw .25vw #F8FFFE, .2vw 0vw .25vw #F8FFFE, .4vw 0vw .25vw #F8FFFE, 
@@ -38,9 +38,26 @@ body {
   .1vw 0vw   5vw#0300F8, .2vw 0vw  20vw#0300F8, .4vw 0vw  10vw#0300F8,
   .1vw 0vw  10vw#0300F8, .2vw 0vw  30vw#0300F8, .4vw 0vw  10vw#0300F8;
 }
+
+
 .navItem, #aboutHeader, #foodMenuHeader, #drinksHeader{
   font-family: Limelight;
 } 
+
+#title, #subtitle, #aboutHeader, #aboutSection, #foodMenuHeader, #drinksHeader, 
+.foodMenuItem, #contactInfoMain{
+  text-align: center;
+}
+
+.navItem, #navBar, #displayContainer{
+  background-color: black;
+  color: white;
+}
+
+#aboutSection, .foodMenuItem{
+  color: whitesmoke;
+}
+
 
 /* MAIN CONTAINER*/
 #mainContainer{
@@ -69,20 +86,12 @@ body {
   background: url('./images/BWSled.jpg') no-repeat center center/cover;
   background-color: rgba(20, 20, 20, .15);
   width: 100%;
-  /* padding: 1px;
-  margin: 1px; */
-  /* margin-top: 3px;
-  margin-left: 3px;
-  margin-right: 3px; */
-
 }
 
 
 #title{
   font-family: Agatta;
   font-size: 11.5vw;
-  text-align: center;
-  /* background-color: red; */
   color:#E1FFFF;
   
 }
@@ -90,8 +99,6 @@ body {
 #subtitle{
   font-family: Bellamy-Signature ;
   font-size: 15vw;
-  /* background-color: green; */
-  text-align: center;
   color:#E1FFFF;
   padding: 1px;
   margin: 1px;
@@ -101,13 +108,7 @@ body {
 #navBar{
   display: flex;
   width: 100%;
-  /* padding: 5px;
-  margin: 1px; */
-  background-color: black;
-  /* border: 3px solid black; */
-  justify-content: center;
-  
-  
+  justify-content: center;  
 }
 
 .navItem{
@@ -115,38 +116,27 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   cursor: pointer;
-  font-family: Limelight;
   text-decoration: underline overline;
   font-size: 5vw;
   color:#E1FFFF;
 }
 
 
-
 #displayContainer{
   display: flex;
-  /* border: 3px solid black; */
   width: 100%;
-  /* margin: 5px; */
   padding: 5px;
-  /* background-color: burlywood; */
-  background-color: black;
 }
 
 /* ABOUT SECTION */
 #aboutSection{
-  /* border: 2px solid black; */
   width: 100%; 
-  padding: 20px;
-  color: whitesmoke;
+  padding: 50px;
 }
 
 #aboutHeader{
-  background-color:black;
-  color: white;
   padding: 1px;
   margin: 1px;
-  text-align: center;
   font-size: 25px;
 }
 
@@ -160,41 +150,25 @@ body {
 }
 
 #foodMenuHeader{
-  background-color: black;
-  border: 2px solid black;
   padding: 1px;
   margin: 1px;
-  text-align: center;
-  color: white;
   text-decoration: underline;
   font-size: 25px;
 }
 
 #drinksHeader{
-  background-color: black;
-  border: 2px solid black;
   padding: 1px;
   margin: 1px;
-  text-align: center;
-  color: white;
 }
 
 .foodMenuItem{
-  text-align: center;
   margin: 25px;
-  border: 2px solid black;
-  background-color: black;
-  color: whitesmoke;
 }
 
 #contactInfoMain{
-  border: 2px solid black;
-  background-color: black;
-  color: white;
   width: 100%;
   margin: 5px;
   padding: 5px;
-  text-align: center;
 }
 
 
