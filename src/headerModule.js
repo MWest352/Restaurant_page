@@ -1,38 +1,9 @@
 //This contains the Title, and subtitle sections
 
-//HEADER
-function header() {
-  const header = document.createElement('div');
+import { createDivElement } from './elementFactory';
 
-  header.setAttribute('id', 'header');
+const header = createDivElement('header', '');
+const title = createDivElement('title', "B. Goode's");
+const subtitle = createDivElement('subtitle', 'est. 2022');
 
-  return header;
-}
-
-//TITLE
-function title() {
-  const title = document.createElement('div');
-
-  title.innerHTML = "B. Goode's";
-  title.setAttribute('id', 'title');
-
-  return title;
-
-};
-
-//SUBTITLE
-function subtitle() {
-  const subtitle = document.createElement('div');
-
-  subtitle.innerHTML = "est.  2022";
-  subtitle.setAttribute('id', 'subtitle');
-
-  return subtitle;
-
-};
-
-export{
-  header,
-  title,
-  subtitle
-}
+export { header, title, subtitle };

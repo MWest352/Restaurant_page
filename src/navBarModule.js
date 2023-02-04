@@ -1,51 +1,19 @@
-//This is where Navigation items will  go
+//Nav Bar
 
-function navBar() {
-  const navBar = document.createElement('div');
+//Import
+import { createDivElement } from "./elementFactory";
+import { createDivElementWithClass } from "./elementFactory";
 
-  navBar.setAttribute('id', 'navBar');
+//Nav Bar Div creation
+const navBar = createDivElement('navBar', '')
+const navItemMenu = createDivElementWithClass('navItemMenu', 'Menu', 'navItem')
+const navItemAbout = createDivElementWithClass('navItemAbout', 'About', 'navItem')
+const navItemContact = createDivElementWithClass('navItemContact', 'Contact', 'navItem')
 
-  return navBar;
-}
-
-function navItemMenu() {
-  const navItemMenu = document.createElement('div');
-
-  navItemMenu.setAttribute('id', 'navItemMenu');
-  navItemMenu.innerHTML = "Menu";
-  navItemMenu.classList.add('navItem');
-  
-
-  return navItemMenu;
-}
-
-function navItemAbout() {
-  const navItemAbout = document.createElement('div');
-
-  navItemAbout.setAttribute('id', 'navItemAbout');
-  navItemAbout.innerHTML = "About";
-  navItemAbout.classList.add('navItem');
-  
-
-  return navItemAbout;
-}
-
-function navItemContact() {
-  const navItemContact = document.createElement('div');
-
-  navItemContact.setAttribute('id', 'navItemContact');
-  navItemContact.innerHTML = "Contact";
-  navItemContact.classList.add('navItem');
-  
-
-  return navItemContact;
-}
-
-
+//Export
 export{
   navBar,
   navItemMenu,
   navItemAbout,
   navItemContact
-
   }
