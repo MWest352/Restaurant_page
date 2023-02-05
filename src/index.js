@@ -3,6 +3,7 @@
 //Import Styling
 import './styling/style.css';
 
+import { createDivElement  } from './elementFactory';
 //Import Header
 import { header, title, subtitle } from './headerModule';
 
@@ -33,24 +34,11 @@ import { contactInfoMain, contactHeader, address, phone } from './contactInfoMod
 
 
 //MAIN CONTAINER
-function mainContainer() {
-  const mainContainer = document.createElement('div');
+const mainContainer = createDivElement('mainContainer', '');
 
-  mainContainer.setAttribute('id', 'mainContainer')
+const displayContainer = createDivElement('displayContainer', '')
 
-  return mainContainer;
-}
-
-function displayContainer() {
-  const displayContainer = document.createElement('div');
-
-  displayContainer.setAttribute('id', 'displayContainer')
-
-  return displayContainer;
-}
-
-
-document.getElementById('content').append(mainContainer());
+document.getElementById('content').append(mainContainer);
 
 
 //APPEND HEADER SECTION
@@ -65,7 +53,7 @@ document.getElementById('navBar').append(navItemContact);
 document.getElementById('navBar').append(navItemAbout);
 
 //DISPLAY CONTAINER
-document.getElementById('mainContainer').append(displayContainer());
+document.getElementById('mainContainer').append(displayContainer);
 
 //NAVIGATION LOGIC
 
@@ -73,7 +61,6 @@ document.getElementById('navItemAbout').addEventListener('click', appendAbout)
 document.getElementById('navItemMenu').addEventListener('click', appendMenu)
 document.getElementById('navItemContact').addEventListener('click', appendContact)
 navItemMenu.onclick=appendMenu;
-// navItemContact.onclick=appendContact();
 
 function clearDisplay(){
   document.getElementById('displayContainer').innerHTML = ""
